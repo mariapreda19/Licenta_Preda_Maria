@@ -1,0 +1,59 @@
+\documentclass{proc}
+\usepackage[margin=1in]{geometry}
+\usepackage{tabularx}
+
+\usepackage[romanian]{babel}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{amsfonts, amsmath, amssymb, amsthm}
+\usepackage{tikz}
+\usetikzlibrary{shapes, positioning}
+\usepackage{multicol}
+\usepackage{sectsty}
+\sectionfont{\Large}
+
+
+\title{{\Huge Explainable AI - Grad-CAM}}
+
+\author{Maria Preda}
+\date{June 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducere}
+
+Indiferent ca vorbim despre un simplu motor de cautare, pe care il folosim in fiecare zi, sau despre aparatura medicala de ultima generatie, Inteligenta Artificiala (AI) a devenit o parte integrata a vietii noastre de zi cu zi. Acest fapt cauzeaza o crestere exponentiala a utilizatii deferitelor tehnologii din acest domeniu, precum si a dezvoltarii accestora. Cu toate ca, initial, rezultatele erau un simplu motiv de bucurie, din cauza importantei modelelor in tot mai multe arii, a devenit esential sa putem avea incredere in modelele folosite. In domenii precum medicina, spre exemplu, o interpretare a unui model pentru boli degenerative ale retinei, avand ca date tomografii de coerenta oculara ar putea fi cruciala. Un medic care foloseste astfel de metode trebuie sa poata avea incredere in interpretarea modelului pentru un eventual diagnostic si pentru integrarea pacientilor intr-un program de tratare a afectiunii. Totodata, cu cat camerele de supraveghere stradala sunt tot mai multe, am putea sa le folosim pentru o supraveghere mai buna a evenimentelor, fara sa fie necesara prezenta unui om. In ultimele decenii, acest domeniu s-a dezvoltat intr-un mod impresionant, in acelasi timp cu puterea de calcul si accesul tot mai facil la date. Multe dintre lucarile stiintifice si proiecte si-au indreptat eforturile in aceasta directie. In prezent, aproximativ 40\% dintre lucrari sunt legate de Inteligenta Artificiala, devenind principalul domeniu de cercepare din Computer Science. 
+
+Odata cu multiplicarea perspectivelor Inteligentei Artificiale, apare o nevoie cruciala de intelegere a metodelor pe care le foloseste. Multe dintre retelele neuronale actuale sunt privite, pana si de oamenii care lucreaza in acest domeniu ca fiind "cutii negre", ale caror intrari si iesiri sunt cunoscute, dar ale caror decizii si mod de functionare sunt inca incerte. 
+
+Din aceasta nevoie de intelegere, interpretare si corectare a eventualelor erori pentru a imbunatati performantele modelului a aparut un subdomeniu al Inteligentei Artificiale: Explainable AI, care se axeaza pe demitificarea domeniului si a rezultatelor obtinute de modele. In anii 1990, s-a inceput incercarea de a interpreta rezultatele obtinute de retele neuronale al caror mod de functionare cu era pe deplin cunoscut. In prezent, exista mai multe metode care pot fi aplicate dupa rularea unui model antrenat pe datele de testare, printre care se numara si: Guided Backpropagation, Class Activation Mapping (CAM), Gradient-weighted Class Activation Mapping (Grad-CAM), Local Interpretable Model-agnostic Explanation (LIME) etc. 
+
+In cadrul acestei lucrari, ma voi axa in principal pe Grad-CAM ca metoda explicativa pentru retelele neuronale, fiind una dintre incercarile mai recente, datand din 2016, introdusa de Ramprasaath et al. Aceasta tehnica de explicare si vizualizare pentru retelele neuronale extinde CAM, putand fi aplicata pentru mai multe tipuri de retele, fara restrictii arhitecturale, care erau prezente in cadrul celei anterior mentionate. Aceasta se axeaza pe raspunderea la unele intrebari esentiale, cum ar fi: "Ce regiune din imagine a condus la alegerea acestei clase?" sau "Ce a influentat rezultatul astfel incat sa nu mai fie cel corect?".
+
+Mi-am propus, in cadrul acestei lucrari, sa demonstrez unele contributii ale acestei metode, pentru probleme precum: intelegerea mai buna a functionarii retelei, gasirea unor probleme ale seturilor de date folosite pentru antrenarea modelelor, intelegerea faptului ca, desi rezultatul nu este neaparat cel asteptat, nu inseamna ca reteaua functioneaza eronat, dar si localizarea si segmentarea slab supervizata. Am utilizat seturi de date diverse pentru antrenarea unor modele, precum si modele deja antrenate pe seturi de date consacrate in acest domeniu. De asemenea, am facut si o comparatie a vizualizarii obtinute cu Grad-CAM fata de alte modalitati.
+
+
+% \section{}
+
+% \section{}
+
+% \section{}
+
+% \section{}
+
+
+% \section{}
+
+
+% \section{}
+
+
+% \section{}
+
+% \section{}
+
+\end{document}
